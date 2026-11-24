@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Detalle</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}"></head>
+<body>
+<div th:replace="~{fragmentos :: menu}"></div>
+<main>
+  <h1 th:text="${producto.nombre}">Producto</h1>
+  <p>Código: <span th:text="${producto.id}">1</span></p>
+  <p>Precio: S/ <span th:text="${producto.precio}">0.00</span></p>
+  <a th:href="@{/productos}">Volver</a>
+</main>
+</body>
+</html>

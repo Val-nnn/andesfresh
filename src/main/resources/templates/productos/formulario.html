@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Nuevo producto</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}"></head>
+<body>
+<div th:replace="~{fragmentos :: menu}"></div>
+<main>
+  <h1>Nuevo producto</h1>
+  <form th:action="@{/productos}" th:object="${producto}" method="post">
+    <label>Nombre <input th:field="*{nombre}" required></label>
+    <label>Precio <input th:field="*{precio}" required></label>
+    <button type="submit">Guardar</button>
+  </form>
+</main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Aviso</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}"></head>
+<body>
+<div th:replace="~{fragmentos :: menu}"></div>
+<main>
+  <h1>Aviso</h1>
+  <p class="alerta" th:text="${mensaje}">Mensaje</p>
+  <a th:href="@{/productos}">Volver al catálogo</a>
+</main>
+</body>
+</html>

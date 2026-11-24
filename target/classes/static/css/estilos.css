@@ -1,0 +1,17 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f6fb; }
+.menu { background: #1B2B6B; color: #fff; padding: 12px 24px; display: flex; gap: 18px; align-items: center; }
+.menu a { color: #fff; text-decoration: none; }
+.menu .usuario { margin-left: auto; }
+main { padding: 24px; max-width: 760px; }
+h1 { color: #1B2B6B; }
+table { border-collapse: collapse; width: 100%; background: #fff; }
+th { background: #F7941D; color: #fff; text-align: left; }
+th, td { padding: 8px 10px; border-bottom: 1px solid #dde; }
+label { display: block; margin: 10px 0; }
+input { padding: 6px; width: 260px; display: block; }
+button { background: #1B2B6B; color: #fff; border: 0; padding: 7px 14px; cursor: pointer; }
+.peligro { background: #c0392b; }
+.en-linea { display: inline; }
+.caja { background: #fff; padding: 24px; max-width: 320px; margin: 60px auto; border-top: 5px solid #F7941D; }
+.alerta { background: #fdecea; color: #8a1c13; padding: 8px; }
+.ok { background: #e8f5e9; color: #1b5e20; padding: 8px; }

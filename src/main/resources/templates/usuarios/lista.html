@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Usuarios</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}"></head>
+<body>
+<div th:replace="~{fragmentos :: menu}"></div>
+<main>
+  <h1>Usuarios del portal</h1>
+  <table>
+    <tr><th>Usuario</th><th>Roles</th><th>Contraseña guardada (hash)</th></tr>
+    <tr th:each="u : ${usuarios}">
+      <td th:text="${u.username}">admin</td>
+      <td><span th:each="r : ${u.roles}" th:text="${r.nombre} + ' '">ADMIN</span></td>
+      <td><code th:text="${u.password}">$2a$10$...</code></td>
+    </tr>
+  </table>
+</main>
+</body>
+</html>

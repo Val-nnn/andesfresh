@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Ingresar</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}"></head>
+<body>
+<div class="caja">
+  <h1>Andes Fresh</h1>
+  <p th:if="${param.error}" class="alerta">Usuario o contraseña incorrectos.</p>
+  <p th:if="${param.logout}" class="ok">Sesión cerrada correctamente.</p>
+  <p th:if="${param.registrado}" class="ok">Cuenta creada. Ya puede ingresar.</p>
+  <form th:action="@{/login}" method="post">
+    <label>Usuario <input name="username" required></label>
+    <label>Contraseña <input type="password" name="password" required></label>
+    <button type="submit">Ingresar</button>
+  </form>
+  <p><a th:href="@{/registro}">Crear cuenta de vendedor</a></p>
+</div>
+</body>
+</html>
